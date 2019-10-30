@@ -1,0 +1,107 @@
+.lists {
+   
+    padding: $sectionPadding;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            @include listHover();
+        }
+    }
+}
+
+.search-box {
+
+    input {
+        border: $compBorder;
+        border-radius: 5px;
+        height: 40px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: 260px;
+    }
+
+    ::placeholder {
+        color: $placeholderColor;
+        font-size: 14px;
+    }
+}
+
+
+
+.lists-heading {
+    align-items: center;
+    color: $textColor;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    h2 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    a {
+        color: $blueColor;
+        font-size: 22px;
+
+        &:hover {
+            @include listHover();
+        }
+
+        &:active {
+            transform: scale(1.2);
+        }
+    }
+}
+
+li {
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.list-secondary {
+    margin: 10px 0 30px 20px;
+}
+
+.list-secondary-icons {
+    margin: 10px 0 0 10px;
+}
+
+
+
+.list-title {
+    @include listText (16px);
+    font-weight: 600;
+}
+
+.list-item {
+    @include listText (14px);
+}
+
+.number-title {
+    color: $greyColor;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.number {
+    color: $greyColor;
+    font-size: 12px;
+}
+
+
+
+.triangle-down {
+    padding-right: $trianglePadding;
+}
+
+.triangle-right {
+    padding-right: $trianglePadding;
+}
+
+.folder {
+    font-size: 14px;
+    padding: $trianglePadding;
+}

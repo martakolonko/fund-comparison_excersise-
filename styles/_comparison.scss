@@ -1,0 +1,65 @@
+
+.comparison {
+    background-color: $backgroundColor;
+    height: 100%;
+    padding: $sectionPadding;
+    
+}
+
+.comparison-heading {
+    color: $textColor;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.topbar-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    a {
+        text-decoration: none;
+
+        &:hover {
+            @include listHover();
+        }
+    }
+}
+
+.buttons-bar {
+    display: flex;
+}
+
+.button {
+    @include buttonText;
+    margin-right: 20px;
+
+    .fas {
+        padding-right: 10px;
+    }
+}
+
+
+
+.template-bar {
+    align-items: center;
+    display: flex;
+
+    label {
+        @include buttonText;
+    }
+
+    select {
+        border: $compBorder;
+        background-color: #FFFFFF;
+        color: $placeholderColor;
+        height: 30px;
+        margin-right: 20px;
+    }
+
+}
+
+
+
+

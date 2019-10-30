@@ -1,0 +1,113 @@
+/* strategy */
+
+.strategy-container {
+    @include containerFlex();
+}
+
+.strategy-title {
+    @include title ();
+}
+
+.strategy-item {
+    @include item();
+}
+
+.item-border-top {
+    border: $compBorder;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.item-border-middle {
+    @include borderLeftRightBottom();
+}
+
+.item-border-bottom {
+    @include borderLeftRightBottom();
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+/* growth */
+
+.growth-container {
+    @include containerFlex();
+}
+
+.growth-title {
+    @include title ();
+}
+
+.growth-item {
+    @include graphs ();
+    opacity: 0.5;
+}
+
+
+
+/* geo */
+
+.geo-container {
+    @include containerFlex();
+}
+
+.geo-title {
+    @include title ();
+}
+
+.geo-item {
+    @include item();
+}
+
+
+
+/* return */
+
+.return-container {
+    @include containerFlex();
+}
+
+.return-title {
+    @include title ();
+}
+
+.return-item {
+    @include item();
+}
+
+.return-minus {
+    @include returnColor (#ed577b26);
+}
+
+.return-plus {
+    @include returnColor (#67e0aa26);
+}
+
+.arrow-down {
+    color: #ed577b;
+    padding-right: 5px;
+}
+
+.arrow-up {
+    color: #67e0aa;
+    padding-right: 5px;
+}
+
+
+
+/* asset */
+
+.asset-container {
+    @include containerFlex();
+    margin-right: 0px;
+}
+
+.asset-title {
+    @include title ();
+}
+
+.asset-item {
+    @include graphs ();
+}

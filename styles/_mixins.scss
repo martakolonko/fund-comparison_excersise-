@@ -1,0 +1,99 @@
+@mixin flexColumn {
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}  
+
+@mixin navHover {
+    background-color: #FFFFFF33;
+    transition: background-color 0.3s ease-out;
+}
+
+@mixin navActive {
+    transition: all .2s ease-in-out;
+    transform: scale(1.1); 
+}
+
+@mixin listHover {
+    color: $blColorTrans;
+    transition: all .3s ease-in-out;
+}
+
+@mixin containerFlex {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 20px 10px 0;
+}
+
+@mixin item {
+    align-items: center;
+    background-color: #FFFFFF;
+    color: $textColor;
+    display: flex;
+    font-size: $itemFont;
+    height: 95px; 
+    justify-content: center;   
+}
+
+@mixin title {
+    background-color: #FFFFFF;
+    border: 2px solid #98a7cb33;
+    border-radius: 5px;
+    display: flex;
+    margin-bottom: 15px;
+    padding: 5px;
+    
+    h2 {
+        align-self: center;
+        color: $textColor;
+        font-size: 14px;
+        padding: 0 10px;
+    }
+    .dots {
+        color: $greyColor;
+        font-size: 22px;
+    }
+}
+
+@mixin cardColor ($color, $background-color) {
+    color: $color;
+    background-color: $background-color; 
+    border-radius: 10px;
+    padding: 7px;
+    font-size: 10px;
+}
+
+@mixin returnColor ($background-color) {
+    background-color: $background-color; 
+    border-radius: 10px;
+    padding: 7px;
+    font-size: $itemFont;
+}
+
+@mixin borderLeftRightBottom {
+    border-left: $compBorder;
+    border-right: $compBorder;
+    border-bottom: $compBorder;
+}
+
+@mixin graphs {
+    height: 95px;
+    img {
+        height: 100px;   
+        object-fit: cover;
+    }
+}
+
+@mixin listText ($fontSize) {
+    color: $textColor;
+    font-size: $fontSize;
+    padding: 10px;
+}
+
+@mixin buttonText {
+    color: #98a7cbB3;
+    font-size: 16px;
+    padding: 10px;
+    text-decoration: none;
+}
+

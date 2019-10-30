@@ -1,0 +1,70 @@
+.cards-container {
+    @include containerFlex();
+    border-right: $compBorder;
+    padding-right: 20px;
+    
+}
+
+.cards-title {
+    @include title ();
+}
+
+.cards-item {
+    background-color: #FFFFFF;
+    border: $compBorder;
+    border-radius: 5px;
+}
+
+.card-top {
+    height: 90px;
+    margin-bottom: 5px;
+}
+
+.card-middle {
+    height: 85px;
+    margin: 5px 0;
+}
+
+.card-bottom {
+    height: 90px;
+    margin-top: 5px;
+}
+
+.card-title {
+    color: $textColor;
+    font-size: 12px;
+    padding: 10px 10px 20px 10px;
+}
+
+.card-HF {
+    @include cardColor (#429a8e, #429a8e26);
+    margin-left: 10px;
+}
+
+.card-equity {
+    @include cardColor (#429a8e, #429a8e26);
+}
+
+.card-HI {
+    @include cardColor (#c28325, #c2832526);
+    margin-left: 10px;
+}
+
+.card-traditional {
+    @include cardColor (#c28325, #c2832526);
+}
+
+.card-CE {
+    @include cardColor (#304cce, #304cce26);
+    margin-left: 10px;
+}
+
+.card-target {
+    @include cardColor (#304cce, #304cce26);
+}
+
+
+
+
+
+   

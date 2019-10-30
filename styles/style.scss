@@ -1,0 +1,145 @@
+@import "./mixins";
+@import "./variables";
+
+@import 'list';
+@import 'comparison';
+@import 'cards';
+@import 'items';
+
+
+/* {
+    outline: 1px solid red;
+     outline-offset: -1px;
+}*/
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Open Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    min-height: 100%;
+}
+
+.page-wrapper {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+
+/* NAVBAR */
+
+.navbar {
+    background-color: $blueColor;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    min-height: 100vh;
+    width: 70px;
+
+    a {
+        color: #FFFFFFBF;
+        text-decoration: none;
+    }
+}
+
+.nav-link-top {
+    flex: 1, 1, auto;
+
+    a {
+        @include flexColumn();
+        border-bottom: 2px solid #FFFFFF33;
+        padding: 21px 12px;
+
+        &:hover {
+            @include navHover();
+        }
+
+        &:active {
+            @include navActive ();
+        }
+    }
+
+    i {
+        font-size: $navIconFont;
+        padding: $navIconPadding;
+    }
+}
+
+.nav-link-middle {
+    flex: none, 5, auto;
+
+    a {
+        @include flexColumn();
+        margin-top: 10px;
+        padding: $navLinkPadding;
+
+        &:hover {
+            @include navHover();
+        }
+
+        &:active {
+            @include navActive ();
+        }
+    }
+
+    i {
+        font-size: $navIconFont;
+        padding: $navIconPadding;
+    }
+}
+
+.nav-link-bottom {
+    align-items: flex-end;
+    justify-content: center;
+    display: flex;
+    flex-grow: 4;
+
+    a {
+        @include flexColumn();
+        padding: 12px 14px;
+
+        &:hover {
+            @include navHover();
+        }
+
+        &:active {
+            @include navActive ();
+        }
+    }
+
+    i {
+        font-size: $navIconFont;
+        padding: $navIconPadding;
+    }
+}
+
+
+
+
+.secondary-wrapper {
+    display: flex;
+    min-height: 100%;
+    width: 100%;
+}
+
+
+
+/* @media screen and (max-width: 1440px) {
+
+.secondary-wrapper {
+    flex-direction: column;
+    }
+   
+} */
